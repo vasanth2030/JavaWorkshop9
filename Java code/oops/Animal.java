@@ -2,15 +2,27 @@ package oops;
 
 public class Animal {
 	private String name;
+	private int age;
 	private String habitat;
 	
 	Animal(){
-		System.out.println("Object creation");
 	}
 	
-	Animal(String name, String habitat) {
-		this.name = name;
-		this.habitat = habitat;
+	Animal(String name, int age, String habitat)
+	{
+		this.name= name;
+		this.age= age;
+		this.habitat= habitat;
+	}
+	
+	public void sleep()
+	{
+		System.out.println("Sleeping");
+	}
+	
+	public void eat()
+	{
+		System.out.println("Eating");
 	}
 
 	public String getName() {
@@ -21,6 +33,14 @@ public class Animal {
 		this.name = name;
 	}
 
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
 	public String getHabitat() {
 		return habitat;
 	}
@@ -28,14 +48,5 @@ public class Animal {
 	public void setHabitat(String habitat) {
 		this.habitat = habitat;
 	}
-
-	public void eat()
-	{
-		System.out.println("Eating");
-	}
-
-	public void sleep()
-	{
-		System.out.println("Sleeping");
-	}
+	
 }
