@@ -1,8 +1,8 @@
 package oops;
 
 public interface ApplicationInterface {
-	void func1();
-	void func2();
-	void func3();
-	void func4();
+	void function1();
+	void function2();
+	void function3();
+	void function4();
 }
